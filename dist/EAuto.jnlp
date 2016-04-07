@@ -11,11 +11,11 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="EAuto.jar" size="18527" download="eager" />
+    <jar href="EAuto.jar" size="18827" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="EAuto" >
     <param name="requiredFXVersion" value="2.2+"/>
   </applet-desc>
-  <jfx:javafx-desc  width="800" height="600" main-class="eauto.EAuto"  name="EAuto" />
+  <jfx:javafx-desc  width="800" height="600" main-class="main.java.eauto.EAuto"  name="EAuto" />
   <update check="always"/>
 </jnlp>
