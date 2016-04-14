@@ -27,7 +27,7 @@ public class EAuto extends Application {
             
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
+                System.out.println("EAuto! ");
             }
         });
         
@@ -36,7 +36,7 @@ public class EAuto extends Application {
         
         Scene scene = new Scene(root, 300, 250);
         
-        primaryStage.setTitle("Hello World!");
+        primaryStage.setTitle("EAuto");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
