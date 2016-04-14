@@ -15,14 +15,14 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author -Zeratul
+ * @author -Zeratul && Majkel && Maks
  */
 public class EAuto extends Application {
     
     @Override
     public void start(Stage primaryStage) {
         Button btn = new Button();
-        btn.setText("Say 'Hello Worldz'");
+        btn.setText("Say 'EAuto'");
         btn.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
