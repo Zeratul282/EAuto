@@ -1,2 +1,2 @@
 language: java
-install: true
+script: ant main
