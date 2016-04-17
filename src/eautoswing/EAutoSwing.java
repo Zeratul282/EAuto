@@ -19,7 +19,7 @@ public class EAutoSwing {
     public static void main(String[] args) {
         MainMenu menu=new MainMenu();
         menu.show();
-        menu.setTitle("Login screen");
+        menu.setTitle("Login screen!");
         
     }
     
