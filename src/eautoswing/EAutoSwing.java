@@ -9,6 +9,7 @@ package eautoswing;
  *
  * @author Michal and Maks and Zbyszek
  * @version 0.1
+ * Główna klasa, tworzy MainMenu - ekran odpowiadający za logowanie użytkownika
  */
 public class EAutoSwing {
 

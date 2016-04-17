@@ -10,6 +10,7 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author Mike
+ * Panel logowania, tu użytkownik wpisuje swoje dane do logowania, oraz może kliknąć guzik register, alby utworzyć nowe konto
  */
 public class MainMenu extends javax.swing.JFrame {
 
@@ -31,6 +32,9 @@ public class MainMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel5 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jEditorPane1 = new javax.swing.JEditorPane();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -41,9 +45,16 @@ public class MainMenu extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jPasswordField1 = new javax.swing.JPasswordField();
 
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/elogosmall.png"))); // NOI18N
+        jLabel5.setText("jLabel1");
+
+        jScrollPane1.setViewportView(jEditorPane1);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(51, 153, 0));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.setForeground(new java.awt.Color(0, 51, 51));
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel1.setText("Login:");
@@ -214,6 +225,7 @@ public class MainMenu extends javax.swing.JFrame {
     
     /**
      * @param args the command line arguments
+     * funkcja main
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -249,7 +261,7 @@ public class MainMenu extends javax.swing.JFrame {
     
     /**
      * gdy klikniemy na przycisk OK, wywołujemy funkcję CheckLogin z parametrami podanymi
-     * przez użytkownika w labelach, jeżeli ich długość jest >0     
+     * przez użytkownika w labelach, jeżeli ich długość jest większa od 0     
      * sprawdzamy czy udało się zalogować   
      * <br>
     * funkcja CheckLogin: 
@@ -258,6 +270,7 @@ public class MainMenu extends javax.swing.JFrame {
     * jeżeli niepoprawne dane to zwraca null 
     * @param login String user's login
     * @param password String user's password
+    * @return User instancja klasy User z parametrami z bazy danych
     */    
     public static User CheckLogin(String login, String password)
     {
@@ -291,18 +304,22 @@ public class MainMenu extends javax.swing.JFrame {
     public static void Register()
     {
         RegisterForm register=new RegisterForm();
-        register.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);       
+        register.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); 
+        register.setTitle(("Register screen"));
         register.show();
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
