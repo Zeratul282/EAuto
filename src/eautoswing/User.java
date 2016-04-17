@@ -8,7 +8,7 @@ package eautoswing;
 
 /**
  *
- * @author Mike
+ * @author Mike @ Maks @ Zbyszek
  * klasa symulująca użytkownika zalogowanego do aplikacji, jego parametry są wypełniane podczas pobierania z bazy danych
  * <br>
  * userType to enum mający 3 możliwości
