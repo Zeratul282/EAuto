@@ -7,7 +7,8 @@ package eautoswing;
 
 /**
  *
- * @author Mike
+ * @author Michal and Maks and Zbyszek
+ * @version 0.1
  */
 public class EAutoSwing {
 
@@ -17,6 +18,7 @@ public class EAutoSwing {
     public static void main(String[] args) {
         MainMenu menu=new MainMenu();
         menu.show();
+        menu.setTitle("Login screen");
         
     }
     
