@@ -8,7 +8,7 @@ package eautoswing;
 /**
  *
  * @author Mike
- * Ekran mechanika, tu może wybierać dostępne funkcje
+ * Ekran mechanika, może on tu może wybierać dostępne funkcje
  */
 public class EkranMechanika extends javax.swing.JFrame {
 

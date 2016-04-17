@@ -8,7 +8,7 @@ package eautoswing;
 /**
  *
  * @author Mike
- * Ekran sprzedawcy (JFrame)
+ * Ekran sprzedawcy (JFrame), może on tu może wybierać dostępne funkcje
  */
 public class EkranSprzedawcy extends javax.swing.JFrame {
 

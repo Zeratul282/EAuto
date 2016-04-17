@@ -14,11 +14,29 @@ package eautoswing;
  * userType to enum mający 3 możliwości
  */
 public class User {
+    /**
+     * imię użytkownika
+     */
     private String imie;
+    /**
+     * nazwisko użytkownika
+     */
     private String nazwisko;
+    /**
+     * nick użytkownika, sprawdzany z loginem
+     */
     private String nick;
+    /**
+     * hasło użytkownika, porównywane z tym w bazie
+     */
     private String password;
+    /**
+     *miasto użytkownika
+     */
     private String miasto;
+    /**
+     * typ użytkownika, enum mający 3 możliwości, pobierany z bazy
+     */
     private UserType usertype;    
 
     /**

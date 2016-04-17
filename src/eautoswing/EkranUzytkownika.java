@@ -8,7 +8,7 @@ package eautoswing;
 /**
  *
  * @author Mike
- * Ekran użytkownika pojazdu (JFrame)
+ * Ekran użytkownika pojazdu (JFrame), może on tu może wybierać dostępne funkcje
  */
 public class EkranUzytkownika extends javax.swing.JFrame {
 
