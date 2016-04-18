@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author Mike
- * Panel logowania, tu użytkownik wpisuje swoje dane do logowania, oraz może kliknąć guzik register, alby utworzyć nowe konto
+ * Panel logowania, tu użytkownik wpisuje  swoje dane do logowania, oraz może kliknąć guzik register, alby utworzyć nowe konto
  */
 public class MainMenu extends javax.swing.JFrame {
 
