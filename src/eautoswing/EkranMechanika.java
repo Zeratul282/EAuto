@@ -50,6 +50,7 @@ public class EkranMechanika extends javax.swing.JFrame {
 
         button1.setLabel("Edytuj historię samochodu");
 
+        label1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         label1.setForeground(new java.awt.Color(255, 255, 255));
         label1.setText("Wyloguj");
 

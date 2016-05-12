@@ -55,6 +55,7 @@ public class EkranUzytkownika extends javax.swing.JFrame {
 
         button4.setLabel("Historia");
 
+        label1.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         label1.setForeground(new java.awt.Color(255, 255, 255));
         label1.setText("Wyloguj");
 
@@ -84,7 +85,7 @@ public class EkranUzytkownika extends javax.swing.JFrame {
                                 .addComponent(button2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(button6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
                         .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(33, 33, 33))
                     .addGroup(jPanel1Layout.createSequentialGroup()
