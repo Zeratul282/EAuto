@@ -16,4 +16,15 @@ public class Mechanic extends User{
      * lista wizyt
      */
     private ArrayList<Visit> visitList;
+    
+    /**
+     * Constructor
+     * @param nick
+     * @param password 
+     */
+    public Mechanic(String nick, String password)
+    {
+        super(nick, password);
+        this.setUsertype(User.UserType.MECHANIC);
+    }
 }

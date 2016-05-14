@@ -16,4 +16,15 @@ public class NormalUser extends User{
      * lista samochodów
      */
     private ArrayList<Car> carList;
+    
+    /**
+     * Constructor
+     * @param nick
+     * @param password 
+     */
+    public NormalUser(String nick, String password)
+    {
+        super(nick, password);
+        this.setUsertype(User.UserType.NORMALUSER);
+    }
 }

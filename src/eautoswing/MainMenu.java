@@ -203,7 +203,7 @@ public class MainMenu extends javax.swing.JFrame {
  */
     public void createScreens(User user)
     {
-        if(user.getUsertype()==User.UserType.MECHANIK)
+        if(user.getUsertype()==User.UserType.MECHANIC)
                 {
                     EkranMechanika m=new EkranMechanika();
                     m.show();
@@ -278,21 +278,20 @@ public class MainMenu extends javax.swing.JFrame {
         //connect to database, and get users data
         if(login.equals("mechanik")||login.equals("seller")||login.equals("normaluser"))//tu zamiast tego będzie czy login i hasło w bazie się zgadzają
         {
-            User user=new User();
-            user.setNick(login);
-            user.setPassword(password);
             if(login.equals("mechanik"))
             {
-            user.setUsertype(User.UserType.MECHANIK);
+            Mechanic mechanic=new Mechanic(login, password);
+            return mechanic;
             }else{
                 if(login.equals("seller"))
                 {
-                    user.setUsertype(User.UserType.SELLER);
+                    Seller seller=new Seller(login, password);
+                    return seller;
                 }else{
-                    user.setUsertype(User.UserType.NORMALUSER);
+                    NormalUser user=new NormalUser(login, password);
+                    return user;
                 }
             }
-            return user;
         }else{  
         return null;
         }

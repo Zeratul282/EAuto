@@ -90,6 +90,47 @@ public class Car {
      * wejście USB
      */
     private Boolean usb;
+    
+    /**
+     * Constructor
+     * @param mark
+     * @param baggageCapacity
+     * @param capacity
+     * @param country
+     * @param height
+     * @param length
+     * @param width
+     * @param kilometers
+     * @param power
+     * @param seats
+     * @param year
+     * @param bluetooth
+     * @param conditioning
+     * @param navigation
+     * @param usb 
+     */
+    public Car(String mark, Integer baggageCapacity, Double capacity,
+            String country, Double height, Double length, Double width, 
+            Integer kilometers, Integer power, Integer seats, Integer year,
+            Boolean bluetooth, Boolean conditioning, Boolean navigation, 
+            Boolean usb)
+    {
+        this.mark=mark;
+        this.baggageCapacity=baggageCapacity;
+        this.capacity=capacity;
+        this.country=country;
+        this.height=height;
+        this.length=length;
+        this.width=width;
+        this.kilometers=kilometers;
+        this.power=power;
+        this.seats=seats;
+        this.year=year;
+        this.bluetooth=bluetooth;
+        this.conditioning=conditioning;
+        this.navigation=navigation;
+        this.usb=usb;
+    }
 
     /**
      * @return the mark

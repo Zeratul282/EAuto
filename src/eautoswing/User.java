@@ -38,6 +38,12 @@ public class User {
      * typ użytkownika, enum mający 3 możliwości, pobierany z bazy
      */
     private UserType usertype;    
+    
+    public User(String nick, String password)
+    {
+        this.nick=nick;
+        this.password=password;
+    }
 
     /**
      * @return the imie
@@ -122,6 +128,6 @@ public class User {
     }
     
     public enum UserType{
-        MECHANIK,NORMALUSER,SELLER;
+        MECHANIC,NORMALUSER,SELLER;
     }
 }
