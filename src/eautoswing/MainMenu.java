@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 /**
  *
  * @author Mike
- * Panel logowania, tu użytkownik wpisuje  swoje dane do logowania, oraz może kliknąć guzik register, alby utworzyć nowe konto
+ * Panel logowania, tu użytkownik wpisuje  swoje dane do logowania, oraz może kliknąć guzik register, aby utworzyć nowe konto
  */
 public class MainMenu extends javax.swing.JFrame {
 
@@ -265,12 +265,14 @@ public class MainMenu extends javax.swing.JFrame {
      * sprawdzamy czy udało się zalogować   
      * <br>
     * funkcja CheckLogin: 
-    * jako parametry przyjmuje podane przez użytkownika dane logowania i sprawdza ich poprawność z danymi w bazie,
-    * jeżeli są poprawne to zwraca obiekt User, wraz z wypełnionymi jego parametrami (m.in user type)
+    * jako parametry przyjmuje podane przez użytkownika dane logowania i sprawdza
+    * ich poprawność z danymi w bazie,
+    * jeżeli są poprawne to zwraca obiekt User (odpowiedniej podklasy), wraz 
+    * z wypełnionymi jego parametrami (m.in user type)
     * jeżeli niepoprawne dane to zwraca null 
     * @param login String user's login
     * @param password String user's password
-    * @return User instancja klasy User z parametrami z bazy danych
+    * @return User instancja podklasy klasy User z parametrami z bazy danych
     */    
     public static User CheckLogin(String login, String password)
     {

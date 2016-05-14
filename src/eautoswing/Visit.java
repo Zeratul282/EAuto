@@ -69,14 +69,16 @@ public class Visit {
      * @param year
      * @param hour
      * @param minute 
+     * @param car - samochód będący przedmiotem wizyty
      */
-    public Visit(Integer day, Integer month, Integer year, Integer hour, Integer minute)
+    public Visit(Integer day, Integer month, Integer year, Integer hour, Integer minute, Car car)
     {
         this.day=day;
         this.month=month;
         this.year=year;
         this.hour=hour;
         this.minute=minute;
+        this.car=car;
     }
 
     /**
