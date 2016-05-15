@@ -18,9 +18,17 @@ public class NormalUser extends User{
     private ArrayList<Car> carList;
     
     /**
-     * exception to trying to lower kilometers of your car
+     * exception for trying to lower kilometers of your car
      */
     public class LowerKilometers extends Exception
+    {
+        
+    }
+    
+    /**
+     * exception for trying to add non-existent car
+     */
+    public class NoCar extends Exception
     {
         
     }
@@ -59,9 +67,16 @@ public class NormalUser extends User{
      * setter for list of cars
      * @param car 
      */
-    public void addCar(Car car)
+    public void addCar(Car car) throws NoCar
     {
-        this.carList.add(car);
+        if(car==null)
+        {
+            throw new NoCar();
+        }
+        else
+        {
+            this.carList.add(car);
+        }
     }
     
     /**
