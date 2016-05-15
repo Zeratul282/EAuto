@@ -18,6 +18,8 @@ public class EAutoSwing {
      */
     public static void main(String[] args) {
         MainMenu menu=new MainMenu();
+        Database database = new Database();
+        
         menu.show();
         menu.setTitle("Login screen");
         

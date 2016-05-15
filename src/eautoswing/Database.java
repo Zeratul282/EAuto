@@ -20,7 +20,7 @@ import eautoswing.User.UserType;
  */
 public class Database {
     public static final String DRIVER = "org.sqlite.JDBC";
-    public static final String DB_URL = "jdbc:sqlite:biblioteka.db";
+    public static final String DB_URL = "jdbc:sqlite:users.db";
  
     private Connection conn;
     private Statement stat;
@@ -42,6 +42,7 @@ public class Database {
         }
  
         createTables();
+        System.out.println("Utworzono bazę danych");
     }
  
     public boolean createTables()  {
