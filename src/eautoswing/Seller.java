@@ -27,4 +27,23 @@ public class Seller extends User{
         super(nick, password);
         this.setUsertype(User.UserType.SELLER);
     }
+    
+    /**
+     * setter for list of cars
+     * @param car 
+     */
+    public void addCar(Car car)
+    {
+        this.carList.add(car);
+    }
+    
+    /**
+     * getter for list of cars
+     * @param index
+     * @return needed Car
+     */
+    public Car getCar(int index)
+    {
+        return this.carList.get(index);
+    }
 }

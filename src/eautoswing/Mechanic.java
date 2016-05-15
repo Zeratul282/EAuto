@@ -27,4 +27,23 @@ public class Mechanic extends User{
         super(nick, password);
         this.setUsertype(User.UserType.MECHANIC);
     }
+    
+    /**
+     * setter dla wizyty
+     * @param visit 
+     */
+    public void addVisit(Visit visit)
+    {
+        this.visitList.add(visit);
+    }
+    
+    /**
+     * getter dla wizyty
+     * @param index
+     * @return potrzebna wizyta
+     */
+    public Visit getVisit(int index)
+    {
+        return this.visitList.get(index);
+    }
 }
