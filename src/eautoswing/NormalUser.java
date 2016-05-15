@@ -34,6 +34,7 @@ public class NormalUser extends User{
     {
         super(nick, password);
         this.setUsertype(User.UserType.NORMALUSER);
+        this.carList=new ArrayList<>();
     }
     
     /**

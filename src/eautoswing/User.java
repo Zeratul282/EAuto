@@ -127,6 +127,9 @@ public class User {
         return password;
     }
     
+    /**
+     * enum for user's type
+     */
     public enum UserType{
         MECHANIC,NORMALUSER,SELLER;
     }

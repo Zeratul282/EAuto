@@ -26,6 +26,7 @@ public class Mechanic extends User{
     {
         super(nick, password);
         this.setUsertype(User.UserType.MECHANIC);
+        this.visitList=new ArrayList<>();
     }
     
     /**

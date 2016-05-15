@@ -26,6 +26,7 @@ public class Seller extends User{
     {
         super(nick, password);
         this.setUsertype(User.UserType.SELLER);
+        this.carList=new ArrayList<>();
     }
     
     /**

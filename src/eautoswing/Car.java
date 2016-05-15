@@ -5,12 +5,16 @@
  */
 package eautoswing;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author -Zeratul
  * klasa symulująca samochód zapisany do systemu
  */
 public class Car {
+    
+    private ArrayList<Refueling> refuelingList;
     /**
      * marka samochodu
      */
@@ -130,6 +134,8 @@ public class Car {
         this.conditioning=conditioning;
         this.navigation=navigation;
         this.usb=usb;
+        
+        this.refuelingList=new ArrayList<>();
     }
 
     /**
@@ -354,5 +360,24 @@ public class Car {
      */
     public void setBluetooth(Boolean bluetooth) {
         this.bluetooth = bluetooth;
+    }
+    
+    /**
+     * setter for list of refuelings
+     * @param refueling 
+     */
+    public void addRefueling(Refueling refueling)
+    {
+        this.refuelingList.add(refueling);
+    }
+    
+    /**
+     * getter for list of refuelings
+     * @param index
+     * @return 
+     */
+    public Refueling getRefueling(int index)
+    {
+        return this.refuelingList.get(index);
     }
 }
