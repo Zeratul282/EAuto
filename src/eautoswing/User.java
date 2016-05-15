@@ -44,6 +44,16 @@ public class User {
         this.nick=nick;
         this.password=password;
     }
+    
+    public User(String imie, String nazwisko, String nick, String password, String miasto, UserType usertype)
+    {
+        this.nick=nick;
+        this.password=password;
+        this.imie=imie;
+        this.nazwisko=nazwisko;
+        this.miasto=miasto;
+        this.usertype=usertype;
+    }
 
     /**
      * @return the imie
