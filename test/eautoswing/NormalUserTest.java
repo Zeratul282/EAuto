@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
 
 /**
  *
@@ -19,6 +20,7 @@ import static org.junit.Assert.*;
 public class NormalUserTest {
     
     NormalUser n;
+    
     
     public NormalUserTest() {
     }
@@ -101,5 +103,21 @@ public class NormalUserTest {
         assertEquals(n.getCar(0),car1);
         assertEquals(n.getCar(1),car2);
     }
+    
+    @Test
+    public void mockTestMethod() throws NormalUser.NoCar{
+        
+        Car mockCar = mock(Car.class);
+        when(mockCar.getKilometers()).thenReturn(0);
+        
+        n.addCar(mockCar);
+        Car testedCar=n.getCar(0);
+        int result=testedCar.getKilometers();
+        
+        verify(mockCar).getKilometers();
+        assertEquals(0,result);
+    }
+    
+    
     
 }
